@@ -19,6 +19,8 @@ public class Ejercicio_11 {
 		int array2[] = new int[tamañoArrayInt];
 		
 		array1 = rellenarArrayAleatoriamente(array1);
+		
+		array2 = array1.clone();
 		array2 = rellenarArrayAleatoriamente(array2);
 		
 		int[] arrayFinal = multiplicacionEntreArrays(array1, array2);
@@ -46,7 +48,7 @@ public class Ejercicio_11 {
 	
 	public static void mostarArray (int[] array) {
 		for (int i = 0; i < array.length; i++) {
-			System.out.println("El indice " + (i+1) + " tiene el valor " + array[i]);
+			System.out.println("El indice " + i + " tiene el valor " + array[i]);
 		}
 	}
 
